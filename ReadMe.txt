@@ -10,6 +10,6 @@ Inputs:
 		Row only contains positive attribute_ids.
 		attribtue_ids are positive integer starts with 0.
 
-3rd input: Embedding dimensionality. 
+3rd input: Embedding dimensionality. [integer number]
 
-4th input: hidden layer neuron counts (hidden layer dimension).
+4th input: hidden layer neuron counts (hidden layer dimension) [integer number].
