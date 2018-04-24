@@ -215,7 +215,7 @@ def main():
 	batch_size = 100;
 	learning_rate = 0.5;
 #	learning_rate = float(sys.argv[6]);
-	regulation_rate = 0.0001;
+	regulation_rate = 0.00005;
 
 	print "learning rate:" +str(learning_rate);
 	print "num_epoch:" + str(num_epoch);
