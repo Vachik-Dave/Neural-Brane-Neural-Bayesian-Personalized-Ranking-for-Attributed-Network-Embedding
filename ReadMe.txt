@@ -1,3 +1,11 @@
+Neural-Brane: Neural Bayesian Personalized Ranking for Attributed Network Embedding
+
+Requirements:
+Python packages: NumPy (version 1.13.* or above), tensoflow-GPU (tested Version 1.1.0)
+
+Run:
+python Neural-Brane_embedding.py ./Datasets/citeseer_graph.txt ./Datasets/citeseer_nodeAtt.txt 75 150
+
 Inputs:
 1st input: grpah filename
 	Format: First row specify "#nodes #edges". 
@@ -13,3 +21,4 @@ Inputs:
 3rd input: Embedding dimensionality. [integer number]
 
 4th input: hidden layer neuron counts (hidden layer dimension) [integer number].
+
