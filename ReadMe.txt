@@ -22,3 +22,5 @@ Inputs:
 
 4th input: hidden layer neuron counts (hidden layer dimension) [integer number].
 
+
+Note: Tensorflow-cpu version will be available soon.
