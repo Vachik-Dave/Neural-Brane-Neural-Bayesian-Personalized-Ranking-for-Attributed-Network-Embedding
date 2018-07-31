@@ -129,8 +129,6 @@ def load_feat_data(filename):
 				max_feat_id = f[0];
 
 		node_feat[u] = feat_list;
-#		if u == 5408:
-#			print str(u) + " " +str(feat_list);
 		prev_u = u;
 		index += 1;
 	print "max_feat_id: "+str(max_feat_id);
@@ -206,15 +204,10 @@ def main():
 	hidden_dim = int(sys.argv[3]);
 	num_neurons = int(sys.argv[4]);
 
-#	num_epoch = 25;
 	num_epoch = 30;
-#	num_epoch = int(sys.argv[5]);
-#	num_iter = 5000;
-#	batch_size = 100;
 	num_iter = 1000;
 	batch_size = 100;
 	learning_rate = 0.5;
-#	learning_rate = float(sys.argv[6]);
 	regulation_rate = 0.00005;
 
 	print "learning rate:" +str(learning_rate);
