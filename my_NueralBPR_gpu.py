@@ -1,7 +1,5 @@
 """
-
 Neural-Brane: Tensorflow GPU implementation.
-
 Author: Vachik Dave
 
 """
@@ -254,7 +252,7 @@ def main(hidden_dim,num_epoch,num_iteration,batch_size,N,adj_lists,test_pos, lea
 				#print k;
 				uij_feat_list = uij_to_feat(uij,node_feat,max_feat_id);
 				uij_adjList = uij_to_adj(uij,adj_lists,test_pos,N);
-
+				
 #				ui_label = get_paired_input(uij);
 #				ui_feat_list, labels = ui_to_feat(ui_label,node_feat,max_feat_id);
 #				print "training batch generated...";
@@ -263,8 +261,6 @@ def main(hidden_dim,num_epoch,num_iteration,batch_size,N,adj_lists,test_pos, lea
 
 				_batch_bprloss += _bprloss
 
-#			print "epoch: ", epoch
-#			print "bpr_loss: ", _batch_bprloss / k
 			print str(epoch) + "," + str(_batch_bprloss / k);
 
 		node_emb, node_att_emb = session.run([node_emb_w,node_att_emb_w])
